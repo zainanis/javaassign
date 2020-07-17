@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        .format {
+
+            width: 250px;
+            height: 230px;
+
+        }
+
+
+        /* Modal starts */
+
+        /* The Modal (background) */
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 500;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        /* Modal Content (image) */
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        /* Add Animation - Zoom in the Modal */
+
+        .modal-open {
+            animation-name: zoomIn;
+            animation-duration: 0.6s;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        .modal-close {
+            animation-name: zoomOut;
+            animation-duration: 0.6s;
+        }
+
+        @keyframes zoomOut {
+            from {
+                transform: scale(1)
+            }
+
+            to {
+                transform: scale(0)
+            }
+        }
+
+
+
+        /* The Close Button */
+
+        .close {
+            position: absolute;
+            top: 50px;
+            right: 10%;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: normal;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* modal ends */
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <!-- <a onclick="alert1()" href="#">alert box</a> -->
+
+
+
+    <!-- <div class="row">
+        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <img onclick="buy()" src="images\download.jfif">
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <img onclick="buy()" src="images\download (1).jfif">
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <img onclick="buy()" src="images\download (2).jfif">
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <img onclick="buy()" src="images\download (3).jfif">
+        </div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+    <!-- <table id="table">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+        </tr>
+        <tr >
+            <td>0</td>
+            <td>zain</td>
+            <td>10</td>
+            <td><button >delete</button></td>
+        </tr>
+        <tr>
+            <td >1</td>
+            <td>zain</td>
+            <td>10</td>
+            <td><button >delete</button></td>
+        </tr>
+        <tr>
+            <td  >2</td>
+            <td>zain</td>
+            <td>10</td>
+            <td><button >delete</button></td>
+        </tr>
+        <tr >
+            <td>3</td>
+            <td>zain</td>
+            <td>10</td>
+            <td><button >delete</button></td>
+        </tr>
+        <tr>
+            <td >4</td>
+            <td>zain</td>
+            <td>10</td>
+            <td><button >delete</button></td>
+        </tr>
+        <tr>
+            <td  >5</td>
+            <td>zain</td>
+            <td>10</td>
+            <td><button >delete</button></td>
+        </tr>
+        <tr >
+            <td>6</td>
+            <td>zain</td>
+            <td>10</td>
+            <td><button >delete</button></td>
+        </tr>
+        <tr>
+            <td >7</td>
+            <td>zain</td>
+            <td>10</td>
+            <td><button >delete</button></td>
+        </tr>
+        <tr>
+            <td  >8</td>
+            <td>zain</td>
+            <td>10</td>
+            <td><button >delete</button></td>
+        </tr>
+        <tr >
+            <td>9</td>
+            <td>zain</td>
+            <td>10</td>
+            <td><button >delete</button></td>
+        </tr>
+        <tr>
+            <td >10</td>
+            <td>zain</td>
+            <td>10</td>
+            <td><button >delete</button></td>
+        </tr>
+       
+        
+        
+    </table> -->
+
+
+
+
+
+
+    <!-- <img onmouseover="imgcg()" onmouseout="orgimtg()" id="as" src="images\download.jfif"> -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <h1 id ="num">0</h1>
+
+    <button onclick="add()">add</button>
+    <button onclick="min()">minus</button> -->
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+    <div id="form">
+        <input type="text" placeholder="First Name" id="fname">
+        <input type="text" placeholder="Last Name" id="lname">
+        <br>
+        <input type="email" placeholder="Email" id="email">
+        <br>
+        <input type="password" placeholder="password" id="pass">
+        <br>
+        <br>
+        <br>
+        <button onclick="submit()">Submit</button>
+        
+
+    </div> -->
+
+
+
+
+    <!-- 
+    <p>Stunning games
+        Marvel at incredible graphics and experience new PS5™ features.
+
+        Ray tracing
+        Immerse yourself in worlds with a new level of realism as rays of light are individually simulated, creating
+        true-to-life shadows and reflections in supported PS5™ games.
+
+        4K-TV gaming
+        Play your favorite PS5™ games on your stunning 4K TV.
+        <a href="#" id="read" onclick="unhide()"  >ReadMore</a>
+        <span id="hide"  style="display: none;">
+            Up to 120fps with 120Hz output
+            Enjoy smooth and fluid high frame rate gameplay at up to 120fps for compatible games, with support for 120Hz
+            output on 4K displays.
+
+            HDR technology
+            With an HDR TV, supported PS5™ games display an unbelievably vibrant and lifelike range of colors.
+
+            8K output
+            PS5™ consoles support 8K Output, so you can play games on your 4320p resolution display
+        </span>
+    </p> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <table id="table">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Class</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>zain</td>
+            <td>10</td>
+            <td><button>delete</button></td>
+            <td><button>edit</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Example</td>
+            <td>5</td>
+            <td><button>delete</button></td>
+            <td><button>edit</button></td>
+        </tr>
+    </table>
+
+
+    <div id="form">
+        <input type="text"  id="id">
+        <br>
+        <input type="text"  id="name">
+        <br>
+        <input type="text"  id="clas">
+        <br>
+        
+        
+        <br>
+        <br>
+        
+    </div> -->
+
+
+
+
+
+
+
+
+
+    <!-- 
+    <div id="modal" class="modal">
+        <span class="close" id="modal-close" onclick="onClosedImagModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+     -->
+
+
+
+
+
+<!-- 
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content">
+            <p class="render"> First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+    </div> -->
+
+</body>
+<script src="java.js"></script>
+
+</html>
